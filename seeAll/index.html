@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Josefin+Sans:wght@400;700&display=swap");
+    </style>
+    <title>Digital Bank</title>
+  </head>
+<body>
+  <div class="navbar">
+    <div class="left-menu">
+      <div class="menu-item">
+          <a id="back" href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+            </svg>
+          </a>
+      </div>
+    </div>
+    <div class="right-menu">
+      <div class="menu-item">
+        <div id="wallet">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width: 20px"
+            fill="currentColor"
+            class="bi bi-wallet2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div id="profilePhoto">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-person"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="balance">
+    <p>Total Balance</p>
+    <p id="accBalance">R$3.500,00</p>
+  </div>
+
+  <div class="total-inout">
+    <div class="inout-item">
+      <svg style="color: palegoldenrod" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+      </svg>
+      <div class="inout-info">
+        <h3>R$1.569,00</h3>
+        <p>Total Income</p>
+      </div>
+    </div>
+    <div class="inout-item">
+      <svg style="color: salmon;" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg>
+      <div class="inout-info">
+        <h3>R$3.139,23</h3>
+        <p>Total Expance</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="transaction">
+    <div class="tr-title">
+      <div class="tr-options">
+        <h1>Transaction</h1>
+      </div>
+    </div>
+
+    <!-- Transações -->
+    <div class="tr-list">
+      <div class="tr-item">
+          <div class="tr-desc">
+            <h2>Google Course</h2>
+            <p>App Design Basics</p>
+          </div>
+          <div class="tr-info">
+            <h2>-R$140,00</h2>
+            <p>By Visa</p>
+          </div>
+      </div>
+      <div class="tr-item">
+          <div class="tr-desc">
+            <h2>Microsoft</h2>
+            <p>Subscription</p>
+          </div>
+          <div class="tr-info">
+            <h2>-R$120,00</h2>
+            <p>By Visa</p>
+          </div>
+      </div>
+      <div class="tr-item">
+          <div class="tr-desc">
+            <h2>Prime Video</h2>
+            <p>Subscription</p>
+          </div>
+          <div class="tr-info">
+            <h2>-R$15,00</h2>
+            <p>By Visa</p>
+          </div>
+      </div>
+      <div class="tr-item">
+          <div class="tr-desc">
+            <h2>Steam</h2>
+            <p>Game Purschase</p>
+          </div>
+          <div class="tr-info">
+            <h2>-R$200,00</h2>
+            <p>By Visa</p>
+          </div>
+      </div>
+      <div class="tr-item">
+          <div class="tr-desc">
+            <h2>Netflix</h2>
+            <p>Subscription</p>
+          </div>
+          <div class="tr-info">
+            <h2>-R$45,00</h2>
+            <p>By Visa</p>
+          </div>
+      </div>
+      <div class="tr-item">
+          <div class="tr-desc">
+            <h2>Disney+</h2>
+            <p>Subscription</p>
+          </div>
+          <div class="tr-info">
+            <h2>-R$20,00</h2>
+            <p>By Visa</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

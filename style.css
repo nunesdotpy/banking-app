@@ -1,0 +1,198 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  color: white;
+  background-color: #090b0a;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.left-menu {
+  width: 100;
+}
+
+.right-menu {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.menu-item {
+  margin: 0px 15px 0px 15px;
+}
+
+.menu-item svg {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#accBalance {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.balance {
+  margin: 20px;
+}
+
+.balance p {
+  margin: 0;
+}
+
+.credit-card {
+  background: rgb(95, 152, 157);
+  background: linear-gradient(
+    135deg,
+    rgba(95, 152, 157, 1) 0%,
+    rgba(30, 33, 45, 1) 49%,
+    rgba(93, 78, 130, 1) 100%
+  );
+  border-radius: 25px;
+}
+
+#ccNumber {
+  margin-left: 30px;
+  font-family: "Gruppo", cursive;
+  font-size: xx-large;
+}
+
+.cc-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cc-item svg {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.up-item {
+  width: 30px;
+  height: 30px;
+}
+
+.up-item:hover {
+  color: #14EBFF;
+}
+
+.user-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.user-options p {
+  font-size: medium;
+  margin: 0;
+}
+
+.up-item {
+  text-align: center;
+}
+
+.transaction {
+    margin: 50px 0px 75px 0px;
+}
+
+
+
+.tr-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tr-options {
+  margin: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#trSeeAll {
+  color: grey;
+}
+
+.tr-item {
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 10px 25px 10px 25px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+  background-color: #141918;
+}
+
+.tr-info {
+    text-align: end;
+}
+
+.footer-options {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #090b0a;
+  color: white;
+  text-align: center;
+}
+
+.footer-item {
+    margin: auto;
+}
+
+.footer-item svg {
+    width: 30px;
+    height: 30px;
+}
+
+.total-inout {
+  display: flex;
+  justify-content: center;
+}
+
+.inout-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  background-color: #141918;
+  padding: 0px 10px 0px 10px;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.inout-item svg {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+.inout-info {
+  font-size: small;
+}
+
+#back svg {
+  background-color: #141918;
+  border-radius: 50%;
+}
+
+#qrCode svg {
+  background-color: #14EBFF;
+  padding: 10px;
+  border-radius: 50%;
+}
