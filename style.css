@@ -16,6 +16,8 @@ a {
 .navbar {
   display: flex;
   justify-content: center;
+  max-width: 850px;
+  margin: auto;
 }
 
 .left-menu {
@@ -29,13 +31,24 @@ a {
 }
 
 .menu-item {
-  margin: 0px 15px 0px 15px;
+  margin: 10px 15px 0px 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-item svg {
-  margin-top: 10px;
+  margin: auto;
   width: 30px;
   height: 30px;
+}
+
+#menuBar, #wallet, #profilePhoto {
+  display: flex;
+  justify-content: center;
+  background-color: #141918;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 #accBalance {
@@ -44,7 +57,9 @@ a {
 }
 
 .balance {
-  margin: 20px;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 800px;
 }
 
 .balance p {
@@ -60,6 +75,8 @@ a {
     rgba(93, 78, 130, 1) 100%
   );
   border-radius: 25px;
+  max-width: 350px;
+  margin: auto;
 }
 
 #ccNumber {
@@ -91,7 +108,9 @@ a {
 .user-options {
   display: flex;
   justify-content: space-around;
-  margin: 15px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .user-options p {
@@ -104,14 +123,14 @@ a {
 }
 
 .transaction {
-    margin: 50px 0px 75px 0px;
+    margin: 50px 0px 10px 0px;
 }
-
-
 
 .tr-title {
   display: flex;
   justify-content: space-between;
+  max-width: 700px;
+  margin: auto;
 }
 
 .tr-options {
@@ -122,6 +141,11 @@ a {
 
 #trSeeAll {
   color: grey;
+}
+
+.tr-list {
+  max-width: 600px;
+  margin: auto;
 }
 
 .tr-item {
@@ -173,7 +197,7 @@ a {
   background-color: #141918;
   padding: 0px 10px 0px 10px;
   border-radius: 20px;
-  width: 200px;
+  width: 150px;
 }
 
 .inout-item svg {
@@ -187,6 +211,8 @@ a {
 }
 
 #back svg {
+  width: 40px;
+  height: 40px;
   background-color: #141918;
   border-radius: 50%;
 }
@@ -195,4 +221,31 @@ a {
   background-color: #14EBFF;
   padding: 10px;
   border-radius: 50%;
+}
+
+.tr-all {
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 85px;
+}
+
+.tr-more {
+  display: flex;
+  justify-content: center;
+  background-color: #141918;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px #141918;
+  text-align: center;
+  height: 100%;
+}
+
+.tr-more p{
+  margin: auto;
+}
+
+@media (min-width: 850px) {
+  .footer-options {
+    display: none;
+  }
 }
